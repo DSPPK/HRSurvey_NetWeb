@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterGeneral.Master.cs" Inherits="DXWebApplication1.MasterGeneral" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KEB Hana Bank Indonesia</title>
+    <%-- PRODUCTION --%>
+    <%--
+    <link rel="stylesheet" href="../Site.css" />
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="../popper.min.js"></script>
+    <script type="text/javascript" src="../bootstrap.min.js"></script>
+    --%>
+
+    <%-- DEVELOPMENT --%>
+    <%--
+    --%>
+    <link rel="stylesheet" href="lib/Site.css" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/popper.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</head>
+<body>
+    <form runat="server">
+        <%--<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">--%>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="Welcome.aspx">KEB Hana Bank - HR Survey 2018</a>
+                </div>
+                <div class="collapse navbar-collapse" id="topMenu">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            <dx:BootstrapMenu ID="AnonymousMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
+                                <CssClasses Control="top-auth-menu" Menu="navbar-nav" />
+                                <Items>
+                                    <dx:BootstrapMenuItem Text="Login" Name="Login" NavigateUrl="Login.aspx">
+                                    </dx:BootstrapMenuItem>
+                                </Items>
+                            </dx:BootstrapMenu>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <dx:BootstrapMenu ID="LoggedInMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu" OnItemClick="LoggedInMenuMenu_ItemClick">
+                                <CssClasses Control="top-auth-menu" Menu="navbar-nav" />
+                                <Items>
+                                    <dx:BootstrapMenuItem Text="Logout" Name="Logout">
+                                    </dx:BootstrapMenuItem>
+                                </Items>
+                            </dx:BootstrapMenu>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> KEB Hana Bank Indonesia - Human Resource Division</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A16612F-669E-4ABD-ABE5-7AD4F0DBC357}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXWebApplication1</RootNamespace>
+    <AssemblyName>HRSurvey</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Data.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Images.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v18.1.Core">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Office.v18.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v18.1.Core">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Pdf.v18.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.1.Core">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Printing.v18.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Core">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.RichEdit.v18.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Web.ASPxScheduler.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Web.ASPxThemes.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.Bootstrap.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Web.Bootstrap.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Web.Resources.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v18.1">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.Web.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core">
+      <HintPath>..\..\..\..\..\..\Library\ASP.NET\DevExpress.v18\DevExpress.XtraScheduler.v18.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="KEBHana.Tools">
+      <HintPath>lib\KEBHana.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap.min.css" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ChangePasswordSuccess.aspx" />
+    <Content Include="glyphicons-halflings-regular.svg" />
+    <Content Include="jquery.min.js" />
+    <Content Include="lib\bootstrap.min.css" />
+    <Content Include="lib\bootstrap.min.js" />
+    <Content Include="lib\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\jquery.min.js" />
+    <Content Include="lib\KEBHana.Tools.dll" />
+    <Content Include="lib\popper.min.js" />
+    <Content Include="lib\Site.css" />
+    <Content Include="lib\utils.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="popper.min.js" />
+    <Content Include="Question10.aspx" />
+    <Content Include="Question20.aspx" />
+    <Content Include="Question30.aspx" />
+    <Content Include="Congrats.aspx" />
+    <Content Include="Question11.aspx" />
+    <Content Include="Question12.aspx" />
+    <Content Include="Question13.aspx" />
+    <Content Include="Question21.aspx" />
+    <Content Include="Question22.aspx" />
+    <Content Include="Question23.aspx" />
+    <Content Include="Reports1.aspx" />
+    <Content Include="IsSubmitted.aspx" />
+    <Content Include="Reports2.aspx" />
+    <Content Include="Site.css" />
+    <Content Include="utils.js" />
+    <Content Include="Reports3.aspx" />
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="Reports4.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Welcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterMain.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MasterGeneral.Master" />
+    <Content Include="glyphicons-halflings-regular.eot" />
+    <Content Include="glyphicons-halflings-regular.ttf" />
+    <Content Include="glyphicons-halflings-regular.woff" />
+    <Content Include="glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterGeneral.Master.cs">
+      <DependentUpon>MasterGeneral.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterGeneral.Master.designer.cs">
+      <DependentUpon>MasterGeneral.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterMain.master.cs">
+      <DependentUpon>MasterMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterMain.master.designer.cs">
+      <DependentUpon>MasterMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="Question10.aspx.cs">
+      <DependentUpon>Question10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question10.aspx.designer.cs">
+      <DependentUpon>Question10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question20.aspx.cs">
+      <DependentUpon>Question20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question20.aspx.designer.cs">
+      <DependentUpon>Question20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question30.aspx.cs">
+      <DependentUpon>Question30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question30.aspx.designer.cs">
+      <DependentUpon>Question30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Congrats.aspx.cs">
+      <DependentUpon>Congrats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Congrats.aspx.designer.cs">
+      <DependentUpon>Congrats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question11.aspx.cs">
+      <DependentUpon>Question11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question11.aspx.designer.cs">
+      <DependentUpon>Question11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question12.aspx.cs">
+      <DependentUpon>Question12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question12.aspx.designer.cs">
+      <DependentUpon>Question12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question13.aspx.cs">
+      <DependentUpon>Question13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question13.aspx.designer.cs">
+      <DependentUpon>Question13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question21.aspx.cs">
+      <DependentUpon>Question21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question21.aspx.designer.cs">
+      <DependentUpon>Question21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question22.aspx.cs">
+      <DependentUpon>Question22.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question22.aspx.designer.cs">
+      <DependentUpon>Question22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question23.aspx.cs">
+      <DependentUpon>Question23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question23.aspx.designer.cs">
+      <DependentUpon>Question23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports1.aspx.cs">
+      <DependentUpon>Reports1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports1.aspx.designer.cs">
+      <DependentUpon>Reports1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IsSubmitted.aspx.cs">
+      <DependentUpon>IsSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IsSubmitted.aspx.designer.cs">
+      <DependentUpon>IsSubmitted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports2.aspx.cs">
+      <DependentUpon>Reports2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports2.aspx.designer.cs">
+      <DependentUpon>Reports2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports3.aspx.cs">
+      <DependentUpon>Reports3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports3.aspx.designer.cs">
+      <DependentUpon>Reports3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports4.aspx.cs">
+      <DependentUpon>Reports4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports4.aspx.designer.cs">
+      <DependentUpon>Reports4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
